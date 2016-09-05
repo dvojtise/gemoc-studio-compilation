@@ -7,7 +7,7 @@ MVN_CMD="$MVN_CMD_NOPROFILES -P ignore_CI_repositories"
 PROGRESSMESSAGE="############## now in $PWD ##################"
 
 # Make sure all the submodules are up-to-date
-git submodule update --remote
+# git submodule update --remote
 
 # we follow this order: https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/depgraph-view/
 
