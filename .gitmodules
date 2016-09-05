@@ -1,0 +1,12 @@
+[submodule "ModelDebugging"]
+	path = ModelDebugging
+	url = https://github.com/SiriusLab/ModelDebugging
+[submodule "gemoc-studio"]
+	path = gemoc-studio
+	url = https://github.com/gemoc/gemoc-studio
+[submodule "concurrency"]
+	path = concurrency
+	url = https://github.com/gemoc/concurrency
+[submodule "coordination"]
+	path = coordination
+	url = https://github.com/gemoc/coordination
