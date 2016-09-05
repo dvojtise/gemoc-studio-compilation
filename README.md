@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The source code of the (GEMOC Studio)[http://gemoc.org/studio/] is currently spread among different git repositories in different github organizations.
+The source code of the [GEMOC Studio](http://gemoc.org/studio/) is currently spread among different git repositories in different github organizations.
 
-This project relies on git (submodules)[https://git-scm.com/book/en/v2/Git-Tools-Submodules] to pull all the source code of the GEMOC studio, and to locally build a working studio using a script.
+This project relies on git [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to pull all the source code of the GEMOC studio, and to locally build a working studio using a script.
 
 ## How it works
 
