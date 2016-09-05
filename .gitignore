@@ -1,3 +1,4 @@
 localm2
 *.jar
 .cache
+*.log
