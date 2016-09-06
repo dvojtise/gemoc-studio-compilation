@@ -10,3 +10,6 @@
 [submodule "coordination"]
 	path = coordination
 	url = https://github.com/gemoc/coordination
+[submodule "gemoc-studio.wiki"]
+	path = gemoc-studio.wiki
+	url = https://github.com/gemoc/gemoc-studio.wiki.git
