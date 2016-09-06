@@ -23,6 +23,7 @@
         <module>concurrency/concurrent_addons</module>
 	<module>coordination/bcool/deployment/org.gemoc.bcool.build</module>
 	<module>coordination/heterogeneousCoordinationEngine</module>
+	<module>gemoc-studio.wiki</module>
     </modules>
 
 </project>
