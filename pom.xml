@@ -12,7 +12,6 @@
 
     <modules>
         <module>gemoc-studio/commons</module>
-        <module>gemoc-studio/gemoc_commons</module>
         <module>gemoc-studio/official_samples/sample.deployers</module>
         <module>gemoc-studio/gemoc_studio</module>
         <module>ModelDebugging</module>
@@ -20,7 +19,6 @@
         <module>concurrency/ccsljava_execution</module>
         <module>concurrency/exploration</module>
         <module>concurrency/gel</module>
-        <module>concurrency/concurrent_addons</module>
 	<module>coordination/bcool/deployment/org.gemoc.bcool.build</module>
 	<module>coordination/heterogeneousCoordinationEngine</module>
 	<module>gemoc-studio.wiki</module>
