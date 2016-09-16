@@ -2,3 +2,8 @@ localm2
 *.jar
 .cache
 *.log
+/ModelDebugging/
+/concurrency/
+/coordination/
+/gemoc-studio.wiki/
+/gemoc-studio/
