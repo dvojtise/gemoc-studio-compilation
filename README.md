@@ -30,7 +30,7 @@ We use two options when calling maven in the script:
 - `-Dmaven.repo.local=$PWD/localm2`: use a folder called *localm2* to cache all the external dependencies of the studio, instead of using the user local maven repository. Since the GEMOC Studio has around 1GB of dependencies, this avoids using this much space in a hidden folder of the user home dir.
 - `-P 'ignore_CI_repositories,!use_CI_repositories'`: enables the maven profile `ignore_CI_repositories` and disables the profile `use_CI_repositories`, to disable the use of the update sites provided by GEMOC and to make sure that only local content is used.
 
-If you prefer to use your own local maven repository (ie. in <HOME>/.m2/repository), remove the use of `-Dmaven.repo.local` in the script.
+If you prefer to use your own local maven repository (ie. in `<HOME>/.m2/repository`), remove the use of `-Dmaven.repo.local` in the script.
 
 If you already compiled and resolved all dependencies at least once (ie. if you filled your local maven repository with everything needed for the build), add the option `-o` to maven in the script to perform an offline only build, which is signficantly faster since it skips checking all maven repositories online. 
 
