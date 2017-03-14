@@ -21,6 +21,12 @@ If a folder already exists (eg. if `compile-all` is called twice in the same pla
 ./compile-all.sh -u
 ~~~
 
+
+If you already compiled and resolved all dependencies at least once (ie. if you filled your local maven repository with everything needed for the build), add the option `-o`to  perform an offline only build, which is signficantly faster since it skips checking all maven repositories online. 
+~~~
+./compile-all.sh -o
+~~~
+
 In the end, the result can then be found in `gemoc_studio/releng/org.gemoc.gemoc_studio.product/target/products/`, with one studio zip per platform.
 
 ## Explanations and Customizing
@@ -31,8 +37,6 @@ We use two options when calling maven in the script:
 - `-P 'ignore_CI_repositories,!use_CI_repositories'`: enables the maven profile `ignore_CI_repositories` and disables the profile `use_CI_repositories`, to disable the use of the update sites provided by GEMOC and to make sure that only local content is used.
 
 If you prefer to use your own local maven repository (ie. in `<HOME>/.m2/repository`), remove the use of `-Dmaven.repo.local` in the script.
-
-If you already compiled and resolved all dependencies at least once (ie. if you filled your local maven repository with everything needed for the build), add the option `-o` to maven in the script to perform an offline only build, which is signficantly faster since it skips checking all maven repositories online. 
 
 ## Future work
 

@@ -4,10 +4,20 @@ set -e
 LOCALREPO="$PWD/localm2"
 UPDATE=false
 
-while getopts ":u" opt; do
+while getopts ":uoh" opt; do
   case $opt in
     u)
       UPDATE=true
+      ;;
+    o)
+      OFFLINEARG='-o'
+      ;;
+    h)
+      echo "Options:"
+      echo "-u: perform \"git update\" in each folder first."
+      echo "-o: run maven in offline mode, to avoid fetching everything online (requires a first online build)"
+      echo "-h: display this help"
+      exit 0
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -41,4 +51,4 @@ retrieve_git_repo "coordination" "https://github.com/gemoc/coordination"
 retrieve_git_repo "gemoc-studio.wiki" "https://github.com/gemoc/gemoc-studio.wiki.git"
 
 # Starting compilation using dedicated pom.xml
-mvn package -Dmaven.repo.local=$LOCALREPO -P 'ignore_CI_repositories,!use_CI_repositories'
+mvn package -Dmaven.repo.local=$LOCALREPO -P 'ignore_CI_repositories,!use_CI_repositories' $OFFLINEARG
