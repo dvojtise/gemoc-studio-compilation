@@ -25,7 +25,7 @@ function retrieve_git_repo {
 			echo "\"$1\" folder already exists, not cloning. Pass option -u to perform \"git update\" in each folder first."
 		fi
 	else
-		git clone "$2"
+		git clone --depth=1 "$2"
 	fi
 }
 
